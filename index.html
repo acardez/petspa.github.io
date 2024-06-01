@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YORDAN PET SPA</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-paw-pattern">
+
+    <header class="text-white bg-slate-800/80 z-50 fixed top-0 right-0 left-0 md:py-1 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto bg-gray-800 md:bg-transparent p-5">
+            <div class="flex items-center justify-between">
+                <a href="">Loo</a>
+
+                <!-- Nav only large screen devices -->
+                <div class="hidden md:flex space-x-10">
+                    <a href="#">Inicio</a>
+                    <a href="">Servicios</a>
+                    <a href="">Portafolio</a>
+                    <a href="">Contacto</a>
+                </div>
+
+                <!-- Menu button, only display on mobile -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white">
+                        x
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="#" class="block py-2 hover:bg-gray-600">Inicio</a>
+                <a href="" class="block py-2 hover:bg-gray-600">Servicios</a>
+                <a href="" class="block py-2 hover:bg-gray-600">Portafolio</a>
+                <a href="" class="block py-2 hover:bg-gray-600">Contacto</a>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <!-- HERO -->
+    <section class="text-gray-600 body-font bg-slate-500">
+        <div class="custom-shape-divider-bottom-1716926701">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <div>
+                    <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
+                        When you look
+                        <span
+                            class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+                            <span class="relative text-white">annoyed</span>
+                        </span>
+                        all the time, people think that you're busy.
+                    </blockquote>
+                </div>
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+                    <br class="hidden lg:inline-block">readymade gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+                    authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:w-4">
+                <img class="object-cover object-center rounded" alt="hero" src="./img/paw.png">
+            </div>
+        </div>
+    </section>
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
+
+    <!-- SERVICES -->
+    <section class="text-gray-600 body-font bg-slate-100">
+        <div class="pointer-events-none absolute bottom-auto left-0 right-0 top-0 -mt-20 w-full overflow-hidden"
+            style="height: 80px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="fill-current text-red-400" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-center text-xl font-semibold capitalize text-bs-dark-blue dark:text-white lg:text-xl">
+                Services
+            </h1>
+            <h2 class="text-center text-2xl font-semibold capitalize text-gray-800 dark:text-white lg:text-3xl">
+                What do we offer?
+            </h2>
+            <!--  Separator  -->
+            <div class="mx-auto mb-6 mt-4 flex justify-center">
+                <span class="inline-block h-1 w-40 rounded-full bg-gradient-to-r from-pink-600 to-sky-600 "></span>
+                <span class="mx-1 inline-block h-1 w-3 rounded-full bg-sky-500"></span>
+                <span class="inline-block h-1 w-1 rounded-full bg-sky-400"></span>
+            </div>
+
+            <!--  Description  -->
+            <p class="flex items-center text-center text-gray-500 lg:mx-8">
+                Olvídate de las jaulas y horas de espera, llevamos hasta tu puerta nuestros servicios profesionales. Tu
+                mascota se sentirá cómoda y relajada mientras la bañamos, higienizamos y estilizamos
+            </p>
+            <!-- Baño -->
+            <div
+                class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mt-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg> -->
+                    <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-wash sm:w-16 sm:h-16 w-10 h-10">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M3.486 8.965c.168 .02 .34 .033 .514 .035c.79 .009 1.539 -.178 2 -.5c.461 -.32 1.21 -.507 2 -.5c.79 -.007 1.539 .18 2 .5c.461 .322 1.21 .509 2 .5c.79 .009 1.539 -.178 2 -.5c.461 -.32 1.21 -.507 2 -.5c.79 -.007 1.539 .18 2 .5c.461 .322 1.21 .509 2 .5c.17 0 .339 -.014 .503 -.034" />
+                        <path d="M3 6l1.721 10.329a2 2 0 0 0 1.973 1.671h10.612a2 2 0 0 0 1.973 -1.671l1.721 -10.329" />
+                    </svg> -->
+                    <svg viewBox="-8 -6 48 48" fill="#0095C1">
+                        <path
+                            d="M15 4C10.042969 4 6 8.042969 6 13L6 20L4 20L4 21C4 25.40625 7.59375 29 12 29L20 29C24.40625 29 28 25.40625 28 21L28 20L19.28125 20L19.0625 20.6875C18.890625 21.191406 17.6875 22 15.96875 22C14.25 22 13.125 21.234375 12.9375 20.6875L12.71875 20L8 20L8 13C8 9.789063 10.1875 7.207031 13.125 6.375C13.273438 6.960938 13.648438 7.386719 13.96875 7.59375C14.359375 7.84375 14.71875 7.96875 14.71875 7.96875L14.84375 8L17.09375 8L17.21875 7.96875C17.21875 7.96875 17.617188 7.90625 18.03125 7.65625C18.445313 7.40625 19 6.816406 19 6C19 5.183594 18.445313 4.59375 18.03125 4.34375C17.617188 4.09375 17.21875 4.03125 17.21875 4.03125L17.09375 4 Z M 16 10C15.449219 10 15 10.449219 15 11C15 11.550781 15.449219 12 16 12C16.550781 12 17 11.550781 17 11C17 10.449219 16.550781 10 16 10 Z M 14 13C13.449219 13 13 13.449219 13 14C13 14.550781 13.449219 15 14 15C14.550781 15 15 14.550781 15 14C15 13.449219 14.550781 13 14 13 Z M 18 13C17.449219 13 17 13.449219 17 14C17 14.550781 17.449219 15 18 15C18.550781 15 19 14.550781 19 14C19 13.449219 18.550781 13 18 13 Z M 12 16C11.449219 16 11 16.449219 11 17C11 17.550781 11.449219 18 12 18C12.550781 18 13 17.550781 13 17C13 16.449219 12.550781 16 12 16 Z M 16 16C15.449219 16 15 16.449219 15 17C15 17.550781 15.449219 18 16 18C16.550781 18 17 17.550781 17 17C17 16.449219 16.550781 16 16 16 Z M 20 16C19.449219 16 19 16.449219 19 17C19 17.550781 19.449219 18 20 18C20.550781 18 21 17.550781 21 17C21 16.449219 20.550781 16 20 16 Z M 6.1875 22L11.46875 22C12.320313 23.300781 14.019531 24 15.96875 24C17.921875 24 19.660156 23.320313 20.53125 22L25.8125 22C25.324219 24.828125 22.972656 27 20 27L12 27C9.027344 27 6.675781 24.828125 6.1875 22Z"
+                            fill="#0095C1" />
+                    </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl mb-2">Baño</h2>
+                    <!-- <p class="leading-relaxed text-base">Se efectua con la cosmética adecuada a cada tipo de manto y
+                        piel.</p>
+
+                    <p class="leading-relaxed text-base">Se opta por un gel antiparasitario si fuese necesario.</p> -->
+
+                    <ul class="list-disc list-inside pl-5 space-y-3 text-slate-500">
+                        <li>Se efectua con la cosmética adecuada a cada tipo de manto y
+                            piel.</li>
+                        <li>Se opta por un gel antiparasitario si fuese necesario.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Corte -->
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl mb-2">Corte de pelo</h2>
+                    <!-- <p class="leading-relaxed text-base">Estilizamos a tu mascota para que luzca genial.</p>
+                    <p class="leading-relaxed text-base"></p>Se utilizan los procedimientos de arreglos y corte de pelo
+                    de peluquería canina.</p> -->
+                    <ul class="list-disc list-inside pl-5 space-y-3 text-slate-500">
+                        <li>Estilizamos a tu mascota para que luzca genial</li>
+                        <li>Se utilizan los procedimientos de arreglos y corte de pelo
+                            de peluquería canina</li>
+                    </ul>
+                </div>
+                <div
+                    class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg viewBox="-14 -14 84 84" fill="#0095C1">
+                        <path
+                            d="M16.6875 -0.09375C15.492188 0.0546875 14.378906 0.917969 14.0625 2.25C14.058594 2.265625 14.035156 2.265625 14.03125 2.28125C13.578125 4.148438 12.828125 7.382813 12.1875 10.65625C11.546875 13.941406 11 17.226563 11 19.3125L11 36.1875C10.65625 36.121094 10.386719 36 10 36C6.675781 36 4 38.675781 4 42L4 44C4 47.324219 6.675781 50 10 50C13.324219 50 16 47.324219 16 44L16 33.0625C17.117188 33.304688 18 34.328125 18 35.5L18 43.8125C18 46.898438 20.25 49.640625 23.375 50C23.386719 50 23.394531 50 23.40625 50C26.988281 50.359375 30 47.476563 30 44L30 42.1875C30 39.246094 27.976563 36.617188 25 36.125C24.988281 36.121094 24.980469 36.128906 24.96875 36.125C24.28125 35.992188 23.628906 36.03125 23 36.15625L23 19.3125C23 15.085938 21.085938 5.996094 20.28125 2.28125C19.984375 0.9375 18.777344 -0.09375 17.3125 -0.09375L16.8125 -0.09375C16.769531 -0.0976563 16.730469 -0.0976563 16.6875 -0.09375 Z M 27.71875 0C27.167969 0.078125 26.78125 0.589844 26.859375 1.140625C26.9375 1.691406 27.449219 2.078125 28 2L37 2L37 4L28 4C27.96875 4 27.9375 4 27.90625 4C27.355469 4.027344 26.925781 4.496094 26.953125 5.046875C26.980469 5.597656 27.449219 6.027344 28 6L37 6L37 8L28 8C27.96875 8 27.9375 8 27.90625 8C27.875 8 27.84375 8 27.8125 8C27.261719 8.050781 26.855469 8.542969 26.90625 9.09375C26.957031 9.644531 27.449219 10.050781 28 10L37 10L37 12L28 12C27.96875 12 27.9375 12 27.90625 12C27.875 12 27.84375 12 27.8125 12C27.261719 12.050781 26.855469 12.542969 26.90625 13.09375C26.957031 13.644531 27.449219 14.050781 28 14L37 14L37 16L28 16C27.96875 16 27.9375 16 27.90625 16C27.875 16 27.84375 16 27.8125 16C27.261719 16.050781 26.855469 16.542969 26.90625 17.09375C26.957031 17.644531 27.449219 18.050781 28 18L37 18L37 20L28 20C27.96875 20 27.9375 20 27.90625 20C27.875 20 27.84375 20 27.8125 20C27.261719 20.050781 26.855469 20.542969 26.90625 21.09375C26.957031 21.644531 27.449219 22.050781 28 22L37 22L37 24L28 24C27.96875 24 27.9375 24 27.90625 24C27.875 24 27.84375 24 27.8125 24C27.261719 24.050781 26.855469 24.542969 26.90625 25.09375C26.957031 25.644531 27.449219 26.050781 28 26L37 26L37 28L28 28C27.96875 28 27.9375 28 27.90625 28C27.875 28 27.84375 28 27.8125 28C27.261719 28.050781 26.855469 28.542969 26.90625 29.09375C26.957031 29.644531 27.449219 30.050781 28 30L37 30L37 45.5C37 47.960938 39.039063 50 41.5 50C43.960938 50 46 47.960938 46 45.5L46 5C46 2.253906 43.746094 0 41 0L38.0625 0C38.042969 0 38.019531 0 38 0L28 0C27.96875 0 27.9375 0 27.90625 0C27.875 0 27.84375 0 27.8125 0C27.78125 0 27.75 0 27.71875 0 Z M 16.9375 1.90625L17.3125 1.90625C17.847656 1.90625 18.210938 2.261719 18.3125 2.71875C19.109375 6.402344 21 15.738281 21 19.3125L21 37.5C20.996094 37.847656 21.175781 38.167969 21.464844 38.351563C21.757813 38.539063 22.125 38.558594 22.4375 38.40625C23.058594 38.09375 23.84375 37.945313 24.59375 38.09375C24.613281 38.09375 24.636719 38.09375 24.65625 38.09375C26.660156 38.414063 28 40.140625 28 42.1875L28 44C28 46.316406 26.03125 48.222656 23.625 48C23.613281 48 23.605469 48 23.59375 48C21.53125 47.746094 20 45.914063 20 43.8125L20 35.5C20 33.039063 17.960938 31 15.5 31C14.160156 31 13 29.839844 13 28.5L13 19.3125C13 17.597656 13.523438 14.304688 14.15625 11.0625C14.789063 7.820313 15.523438 4.585938 15.96875 2.75C15.96875 2.738281 15.96875 2.730469 15.96875 2.71875C16.066406 2.277344 16.542969 1.957031 16.9375 1.90625 Z M 39 2L41 2C42.65625 2 44 3.34375 44 5L44 45.5C44 46.839844 42.839844 48 41.5 48C40.160156 48 39 46.839844 39 45.5L39 29.1875C39.027344 29.054688 39.027344 28.914063 39 28.78125L39 25.1875C39.027344 25.054688 39.027344 24.914063 39 24.78125L39 21.1875C39.027344 21.054688 39.027344 20.914063 39 20.78125L39 17.1875C39.027344 17.054688 39.027344 16.914063 39 16.78125L39 13.1875C39.027344 13.054688 39.027344 12.914063 39 12.78125L39 9.1875C39.027344 9.054688 39.027344 8.914063 39 8.78125L39 5.1875C39.027344 5.054688 39.027344 4.914063 39 4.78125 Z M 17 24C15.894531 24 15 24.894531 15 26C15 27.105469 15.894531 28 17 28C18.105469 28 19 27.105469 19 26C19 24.894531 18.105469 24 17 24 Z M 13 32.21875C13.308594 32.429688 13.644531 32.589844 14 32.71875L14 44C14 46.277344 12.277344 48 10 48C7.722656 48 6 46.277344 6 44L6 42C6 39.722656 7.722656 38 10 38C10.507813 38 11.117188 38.152344 11.6875 38.34375C11.988281 38.441406 12.320313 38.394531 12.582031 38.207031C12.839844 38.023438 12.996094 37.726563 13 37.40625 Z M 10 40C8.898438 40 8 40.898438 8 42L8 44C8 45.101563 8.898438 46 10 46C11.101563 46 12 45.101563 12 44L12 42C12 40.898438 11.101563 40 10 40 Z M 24 40C22.898438 40 22 40.898438 22 42L22 44C22 45.101563 22.898438 46 24 46C25.101563 46 26 45.101563 26 44L26 42C26 40.898438 25.101563 40 24 40Z"
+                            fill="#0095C1" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Uñas -->
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg> -->
+                    <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-cut sm:w-16 sm:h-16 w-10 h-10">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M9.15 14.85l8.85 -10.85" />
+                        <path d="M6 4l8.85 10.85" />
+                    </svg> -->
+                    <!-- <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                        class="sm:w-16 sm:h-16 w-10 h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m7.848 8.25 1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863 2.077-1.199m0-3.328a4.323 4.323 0 0 1 2.068-1.379l5.325-1.628a4.5 4.5 0 0 1 2.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.33 4.33 0 0 0 10.607 12m3.736 0 7.794 4.5-.802.215a4.5 4.5 0 0 1-2.48-.043l-5.326-1.629a4.324 4.324 0 0 1-2.068-1.379M14.343 12l-2.882 1.664" />
+                    </svg> -->
+                    <svg viewBox="-18 -16 84 84" fill="#0095C1">
+                        <path
+                            d="M13.9375 3.6875C9.320313 3.6875 5.53125 7.441406 5.53125 12.0625C5.53125 14.457031 6.546875 16.628906 8.15625 18.15625L8.21875 18.21875C8.21875 18.21875 10.410156 19.984375 12.6875 21.84375C13.828125 22.773438 14.980469 23.734375 15.90625 24.5C16.832031 25.265625 17.5625 25.878906 17.65625 25.96875C18.105469 26.402344 18.15625 26.648438 18.28125 27.21875C18.40625 27.789063 18.628906 28.707031 19.4375 29.46875C19.535156 29.5625 19.890625 29.871094 20.03125 30L8 30C3.457031 30 0 33.382813 0 37.9375C0 40.199219 0.761719 42.304688 2.21875 43.84375C3.675781 45.382813 5.8125 46.3125 8.375 46.3125C12.992188 46.3125 16.28125 42.480469 16.28125 37.9375C16.28125 37.460938 16.40625 37.332031 16.5 37.25C16.59375 37.167969 16.777344 37.0625 17.125 37.0625L29.53125 37.0625C29.5625 37.0625 29.59375 37.0625 29.625 37.0625L40.15625 37.0625L40.15625 37.03125C40.253906 37.035156 42.460938 37.167969 44.8125 36.5625C46.015625 36.253906 47.273438 35.761719 48.28125 34.875C49.289063 33.988281 50 32.652344 50 31L50 30.125L49.125 30L39.4375 28.8125L49.46875 21.65625L50.6875 20.78125L49.40625 20C47.449219 18.789063 45.390625 18.554688 43.8125 18.625C42.234375 18.695313 41.125 19.0625 41.125 19.0625L41 19.125L28.03125 25.625C25.058594 23.417969 20.539063 20.058594 19.8125 19.53125C19.5 19.304688 19.46875 19.164063 19.46875 18.9375C19.46875 18.710938 19.570313 18.355469 19.84375 18L19.8125 18C21.335938 16.484375 22.3125 14.378906 22.3125 12.0625C22.3125 7.445313 18.558594 3.6875 13.9375 3.6875 Z M 13.9375 5.6875C17.476563 5.6875 20.3125 8.523438 20.3125 12.0625C20.3125 13.867188 19.574219 15.492188 18.375 16.65625L18.3125 16.71875L18.28125 16.78125C17.804688 17.402344 17.460938 18.125 17.46875 18.9375C17.476563 19.75 17.910156 20.582031 18.65625 21.125C19.289063 21.582031 24.152344 25.21875 27.125 27.4375C27.226563 27.558594 27.355469 27.65625 27.5 27.71875C28.273438 28.292969 29.9375 29.53125 29.9375 29.53125L30.15625 29.6875L30.40625 29.71875L47.8125 31.875C47.652344 32.46875 47.414063 32.980469 46.96875 33.375C46.3125 33.953125 45.324219 34.363281 44.3125 34.625C42.289063 35.144531 40.1875 35.0625 40.1875 35.0625L29.59375 35.0625C29.574219 35.0625 29.550781 35.0625 29.53125 35.0625C29.023438 35.0625 28.019531 34.609375 27.875 34.46875C27.558594 34.164063 26.175781 32.910156 24.625 31.5C23.074219 30.089844 21.417969 28.566406 20.8125 28C20.375 27.585938 20.34375 27.382813 20.21875 26.8125C20.09375 26.242188 19.871094 25.308594 19.0625 24.53125C18.761719 24.242188 18.121094 23.710938 17.1875 22.9375C16.253906 22.164063 15.078125 21.210938 13.9375 20.28125C11.691406 18.445313 9.597656 16.773438 9.53125 16.71875C9.519531 16.707031 9.511719 16.699219 9.5 16.6875C9.5 16.6875 9.46875 16.65625 9.46875 16.65625C8.273438 15.492188 7.53125 13.863281 7.53125 12.0625C7.53125 8.523438 10.398438 5.6875 13.9375 5.6875 Z M 14 7.5C11.527344 7.5 9.5 9.527344 9.5 12C9.5 14.472656 11.527344 16.5 14 16.5C16.472656 16.5 18.5 14.472656 18.5 12C18.5 9.527344 16.472656 7.5 14 7.5 Z M 14 9.5C15.390625 9.5 16.5 10.609375 16.5 12C16.5 13.390625 15.390625 14.5 14 14.5C12.609375 14.5 11.5 13.390625 11.5 12C11.5 10.609375 12.609375 9.5 14 9.5 Z M 44.09375 20.6875C44.90625 20.683594 45.875 20.78125 46.84375 21.09375L36.46875 28.4375L30.90625 27.75C30.867188 27.722656 30.015625 27.085938 29.8125 26.9375L41.78125 20.96875C41.78125 20.96875 42.738281 20.691406 44.09375 20.6875 Z M 30.5 31C29.671875 31 29 31.671875 29 32.5C29 33.328125 29.671875 34 30.5 34C31.328125 34 32 33.328125 32 32.5C32 31.671875 31.328125 31 30.5 31 Z M 22.03125 31.96875C22.074219 31.972656 22.113281 31.972656 22.15625 31.96875C22.59375 32.367188 22.832031 32.558594 23.28125 32.96875C24.382813 33.972656 24.972656 34.523438 25.5625 35.0625L17.125 35.0625C16.457031 35.0625 15.761719 35.25 15.1875 35.75C14.613281 36.25 14.28125 37.054688 14.28125 37.9375C14.28125 41.554688 11.914063 44.3125 8.375 44.3125C6.285156 44.3125 4.757813 43.601563 3.6875 42.46875C2.617188 41.335938 2 39.753906 2 37.9375C2 34.335938 4.386719 32 8 32L21.84375 32C21.90625 31.996094 21.96875 31.984375 22.03125 31.96875 Z M 8 33.5C5.527344 33.5 3.5 35.527344 3.5 38C3.5 40.472656 5.527344 42.5 8 42.5C10.472656 42.5 12.5 40.472656 12.5 38C12.5 35.527344 10.472656 33.5 8 33.5 Z M 8 35.5C9.390625 35.5 10.5 36.609375 10.5 38C10.5 39.390625 9.390625 40.5 8 40.5C6.609375 40.5 5.5 39.390625 5.5 38C5.5 36.609375 6.609375 35.5 8 35.5Z"
+                            fill="#0095C1" />
+                    </svg>
+
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Recorte de uñas</h2>
+                    <!-- <p class="leading-relaxed text-base">Eliminación del pelo interdigital.</p>
+                    <p class="leading-relaxed text-base">Se realiza un buen corte de uñas, sin olvidar los espolones.
+                    </p> -->
+                    <ul class="list-disc list-inside pl-5 space-y-3 text-slate-500">
+                        <li>Eliminación del pelo interdigital</li>
+                        <li>Buen corte de uñas, sin olvidar los espolones</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Oidos -->
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Limpieza de oidos</h2>
+                    <!-- <p class="leading-relaxed text-base">Estilizamos a tu mascota para que luzca genial.</p>
+                    <p class="leading-relaxed text-base"></p>Se utilizan los procedimientos de arreglos y corte de pelo
+                    de peluquería canina.</p> -->
+                    <ul class="list-disc list-inside pl-5 space-y-3 text-slate-500">
+                        <li>Lavado de orejas</li>
+                        <li>Eliminación del exceso de pelo en el canal auditivo</li>
+                    </ul>
+                </div>
+                <div
+                    class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg viewBox="-10 -10 54 54" fill="#0095C1">
+                        <path
+                            d="M26.029297 2.9003906L25.488281 3.0253906C25.488281 3.0253906 21.629669 3.8136899 19.292969 6.1503906C18.225617 7.2177425 17.460533 8.2843592 16.951172 9.1855469C16.861002 9.3450797 16.820571 9.4685906 16.746094 9.6171875L16.064453 8.9355469L14.650391 10.349609L15.728516 11.427734L7.15625 20L4.2988281 20L2.5859375 21.714844L10.285156 29.414062L12 27.701172L12 24.84375L20.572266 16.271484L21.650391 17.349609L23.064453 15.935547L22.382812 15.253906C22.530902 15.179646 22.653556 15.138665 22.8125 15.048828C23.713688 14.539467 24.782257 13.774383 25.849609 12.707031C28.186192 10.370448 28.974609 6.5117186 28.974609 6.5117188L29.099609 5.9707031L26.029297 2.9003906 z M 25.443359 5.1425781L26.857422 6.5566406C26.657774 7.2605597 25.891769 9.8367464 24.435547 11.292969C23.502899 12.225617 22.569687 12.889455 21.828125 13.308594C21.457344 13.518163 21.133014 13.666866 20.894531 13.755859C20.888931 13.757959 20.892319 13.755744 20.886719 13.757812L18.242188 11.113281C18.244688 11.106381 18.2415 11.110516 18.244141 11.103516C18.333131 10.865033 18.481837 10.540703 18.691406 10.169922C19.110545 9.4283595 19.774383 8.4971012 20.707031 7.5644531C22.16315 6.1083341 24.739467 5.3420445 25.443359 5.1425781 z M 23.939453 7C23.667953 7 23.396453 7.1035469 23.189453 7.3105469L20 10.5L21.5 12L24.689453 8.8105469C25.103453 8.3965469 25.103453 7.7245469 24.689453 7.3105469C24.482453 7.1035469 24.210953 7 23.939453 7 z M 17.142578 12.841797L19.158203 14.857422L11.214844 22.800781L9.1992188 20.785156L17.142578 12.841797 z M 5.6992188 22L7.5859375 22L10 24.414062L10 26.300781L5.6992188 22 z"
+                            fill="#0095C1" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Anal -->
+            <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg viewBox="-12 -12 56 56" fill="#0095C1">
+                        <path
+                            d="M20 3L20 8.0371094C19.268315 8.0291186 17.965931 7.9885469 15.884766 8.1875L15.882812 8.1875C13.293041 8.4359263 10.750311 9.3137971 8.6367188 10.912109C7.8201357 11.529309 7.19226 12.394179 6.734375 13.296875C6.27649 14.199571 5.9784622 15.12172 6 16.023438C5.9996616 16.207556 5.9835968 16.394984 5.9765625 16.587891C5.6629907 16.463602 5.3271705 16.31472 4.9785156 16.107422C3.9169123 15.476227 3 14.588917 3 13L1 13C1 15.411083 2.5501815 16.990866 3.9550781 17.826172C4.734834 18.289789 5.4396738 18.547405 5.9746094 18.708984C6.1902771 20.600429 7.237561 22.29753 8.8144531 23.394531L8.0605469 25.65625L7.921875 26.076172L9 28L11 28L10.097656 25.871094L10.097656 25.869141L10.714844 24.019531L12.580078 24.019531L12 26L13 28L15 28L14 26L15 23.414062L16 22.414062L17 23.414062L17 28L19 28L19 22.585938L17 20.585938L17 17.382812L12 15L13 17L15 18.617188L15 20.585938L13 22.585938L12.785156 23.322266L10.449219 22.128906C8.8007925 21.286561 7.8115135 19.554805 7.9316406 17.710938C7.9640325 17.209875 8 16.595841 8 16L8 15.988281L8 15.976562C7.99154 15.622281 8.1699632 14.886476 8.5175781 14.201172C8.8651931 13.515868 9.3723798 12.862613 9.8417969 12.507812C11.61993 11.162794 13.806603 10.395254 16.074219 10.177734C18.517484 9.944166 20.976563 10 20.976562 10L22 10.023438L22 5.3144531L23.980469 7L24.902344 7L25.666016 7L27.412109 8.3085938L28.732422 9.2988281L27.882812 11.001953L25.660156 11L24.339844 11L23.820312 12.212891L21.162109 18.417969L21 18.792969L21 19.205078L21 28L23 28L23 19.207031L23 19.205078L25.660156 13L29.117188 13.001953L31.267578 8.7011719L28.611328 6.7089844L26.333984 5L24.902344 5L24.716797 5L22.369141 3L20 3 z M 3.6992188 24.5C2.4992188 24.9 3.2 26.099609 2.5 26.099609C2.9 26.899609 4.4003906 26.900391 4.4003906 26.900391C4.4003906 26.900391 2.9007813 27.400391 2.3007812 26.400391C1.3007813 26.400391 1 28 1 28L6 28C6 25.7 3.8992187 25.9 3.6992188 24.5 z"
+                            fill="#0095C1" />
+                    </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Glándula anal</h2>
+                    <ul class="list-disc list-inside pl-5 space-y-3 text-slate-500">
+                        <li>Su drenaje en el momento del baño es una buena opción para deshacerse del mal olor.</li>
+                    </ul>
+                    <!-- <p class="leading-relaxed text-base">Eliminación del pelo interdigital.</p>
+                    <p class="leading-relaxed text-base">Se realiza un buen corte de uñas, sin olvidar los espolones.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="text-gray-600 body-font bg-gray-50">
+        <div class="pointer-events-none absolute bottom-auto left-0 right-0 top-0 -mt-20 w-full overflow-hidden"
+            style="height: 80px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="fill-current text-red-600" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-center text-xl font-semibold capitalize text-bs-dark-blue dark:text-white lg:text-xl">
+                    About us
+                </h1>
+                <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                    Portfolio
+                </h2>
+                <!--  Separator  -->
+                <div class="mx-auto mb-6 mt-4 flex justify-center">
+                    <span class="inline-block h-1 w-40 rounded-full bg-gradient-to-r from-pink-600 to-sky-600 "></span>
+                    <span class="mx-1 inline-block h-1 w-3 rounded-full bg-sky-500"></span>
+                    <span class="inline-block h-1 w-1 rounded-full bg-sky-400"></span>
+                </div>
+                <!--  Description  -->
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                    El amor por los perros es el recurso más importante a tomar en
+                    cuenta en nuestra empresa, puesto que fue la motivación para iniciar este
+                    emprendimiento personal.
+                    ¡Equipo Pequeño con grandes deseos e inspiración!
+                </p>
+            </div>
+            <div class="flex flex-col items-center justify-between gap-4 py-10 text-bs-pale-red md:flex-row">
+                <!-- Left side -->
+                <div class="md:w-1/2">
+                    <p class="flex items-center text-justify font-mons text-gray-800 lg:mx-8">
+                        Yordan Pet Spa es un emprendimiento dedicado al grooming de su mascota, canes en
+                        particular.
+                    </p>
+                    <p class="flex items-center text-justify font-mons text-gray-800 lg:mx-8">
+                        Somos una empresa familiar formada por personas que respetan y cuidan a los animales.
+                        Su servicio móvil pone además la comodidad de lograr, sin generar
+                        traslados;
+                        un servicio completo dentro de un ambiente de confort y de tecnología de primera.
+                    </p>
+                </div>
+                <!-- Right side -->
+                <!-- <div class="slider-container">
+                    <div class="slider position">
+
+                    </div>
+                </div> -->
+
+                <div
+                    class="order-first flex w-full h-auto items-center  justify-center md:order-none md:size-1/2 border border-red-600">
+                    <!-- <div class="group mx-auto flex w-full flex-col bg-transparent"> -->
+
+                    <!-- Carousel Body  -->
+                    <!-- <div
+                            class="relative block items-center rounded-lg bg-bs-light-gray shadow-xl dark:bg-bs-very-dark-blue md:flex"> -->
+
+                    <!-- Promo -->
+                    <div class="position absolute right-0 top-0 slider rounded-md border border-blue-800">
+
+                    </div>
+
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+            </div>
+            <!-- Team -->
+            <div class="bg-white dark:bg-gray-800 h-screen py-6 sm:py-8 lg:py-12">
+                <!-- <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                        <div class="flex items-center gap-12">
+                            <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">Gallery</h2>
+
+                            <p class="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+                                This is a section of some simple filler text,
+                                also known as placeholder text. It shares some characteristics of a real written text.
+                            </p>
+                        </div>
+
+                        <a href="#"
+                            class="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+                            More
+                        </a>
+                    </div> -->
+
+                <!-- <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8"> -->
+                <!-- image - start -->
+                <!-- <a href="#"
+                            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="./img/gallery/1.png" loading="lazy" alt="Photo by Minh Pham"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span
+                                class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+                        </a> -->
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <!-- <a href="#"
+                            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                            <img src="./img/gallery/2.png" loading="lazy" alt="Photo by Magicle"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span
+                                class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
+                        </a> -->
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <!-- <a href="#"
+                            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                            <img src="./img/gallery/3.png" loading="lazy" alt="Photo by Martin Sanchez"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span
+                                class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
+                        </a> -->
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <!-- <a href="#"
+                            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                            <img src="./img/gallery/4.png" loading="lazy" alt="Photo by Lorenzo Herrera"
+                                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                            <div
+                                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                            </div>
+
+                            <span
+                                class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+                        </a> -->
+                <!-- image - end -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <div class="p-5 sm:p-8"> -->
+                <div
+                    class="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">
+                    <img src="./img/gallery/1.png" />
+                    <img src="./img/gallery/2.png" />
+                    <img src="./img/gallery/3.png" />
+                    <img src="./img/gallery/4.png" />
+                    <img src="./img/gallery/5.png" />
+                    <img src="./img/gallery/6.png" />
+                    <img src="./img/gallery/7.png" />
+                    <img src="./img/gallery/8.png" />
+                </div>
+            </div>
+            <!-- <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="./img/gallery/1.png">
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="./img/gallery/2.png">
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="./img/gallery/3.png">
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="./img/gallery/4.png">
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+
+                    <div class="h-1/2 w-full overflow-hidden rounded-md shadow-md">
+                        <img class="size-full object-cover object-center transition-all duration-700 ease-in-out hover:h-[120%]"
+                            src="./img/gallery/5.png" alt="" onclick="openFulImg(this.src)">
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="./img/gallery/6.png">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 ">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+                            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="text-gray-600 body-font bg-sky-50">
+
+
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
+            <h2 class="text-center text-2xl font-semibold capitalize text-gray-800 dark:text-white lg:text-3xl">
+                What clients saying
+            </h2>
+            <!--  Separator  -->
+            <div class="mx-auto mb-6 mt-4 flex justify-center">
+                <span class="inline-block h-1 w-40 rounded-full bg-gradient-to-r from-pink-600 to-sky-600 "></span>
+                <span class="mx-1 inline-block h-1 w-3 rounded-full bg-sky-500"></span>
+                <span class="inline-block h-1 w-1 rounded-full bg-sky-400"></span>
+            </div>
+            <div class="px-5 py-12 mx-auto">
+                <div class="w-full mx-auto text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+                        <path
+                            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                        </path>
+                    </svg>
+                    <p class="leading-relaxed text-lg">Para nosotros nuestra mascota es un miembro más de la familia,
+                        por eso entendemos que
+                        ellos también merecen un trato de máxima calidad, donde primará el cariño y el bienestar
+                        hacia su mejor amigo.</p>
+                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Yordan</h2>
+                    <p class="text-gray-500">CEO Yordan Pet Spa</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <div
+                            class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                            <img src="./img/avatar/Rafael.jpeg" alt="Tania Andrew"
+                                class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                            <div class="flex w-full flex-col gap-0.5">
+                                <div class="flex items-center justify-between">
+                                    <h5 class="title-font font-medium text-gray-900">
+                                        Holden Caulfield
+                                    </h5>
+                                    <div class="flex items-center gap-1 5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 bg-clip-text text-slate-400 bg-gradient-to-r from-pink-500 to-violet-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-gray-500 text-sm">
+                                    Kendall
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <div
+                            class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
+                                alt="Tania Andrew"
+                                class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                            <div class="flex w-full flex-col gap-0.5">
+                                <div class="flex items-center justify-between">
+                                    <h5 class="title-font font-medium text-gray-900">
+                                        Tania Andrew
+                                    </h5>
+                                    <div class="flex items-center gap-1 5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 text-amber-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-4 bg-clip-text text-slate-400 bg-gradient-to-r from-pink-500 to-violet-500">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-gray-500 text-sm">
+                                    Coral Gables
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="text-slate-50 body-font relative bg-slate-50">
+        <div class="pointer-events-none absolute bottom-auto left-0 right-0 top-0 -mt-[79px] w-full overflow-hidden"
+            style="height: 80px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="fill-current text-bs-bright-red" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+
+        <div>
+            <!--  Title  -->
+            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
+                Contact
+            </h1>
+            <h2 class="text-center text-2xl font-semibold capitalize text-gray-900 dark:text-white lg:text-3xl">
+                Desde aquí nos movemos por toda Miami
+            </h2>
+            <!--  Separator  -->
+            <div class="mx-auto mb-6 mt-4 flex justify-center">
+                <span class="inline-block h-1 w-40 rounded-full bg-gradient-to-r from-pink-600 to-sky-600 "></span>
+                <span class="mx-1 inline-block h-1 w-3 rounded-full bg-sky-500"></span>
+                <span class="inline-block h-1 w-1 rounded-full bg-sky-400"></span>
+            </div>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap text-gray-600 ">
+
+            <div
+                class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+                    marginwidth="0" scrolling="no"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0243481106218!2d-80.27532888566019!3d25.769759314557813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b77c4780b3f5%3A0xc9483d6bc0aa5679!2s4770%20SW%202nd%20St%2C%20Coral%20Gables%2C%20FL%2033134%2C%20EE.%20UU.!5e0!3m2!1ses!2scu!4v1655683473611!5m2!1ses!2scu"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                        <p class="mt-1">4770 SW 2nd St, Coral Gables, FL 33134, EE. UU.</p>
+                    </div>
+                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                        <a class="text-indigo-500 leading-relaxed">yordanpetspa@gmail.com</a>
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                        <p class="leading-relaxed">01 786 499 5806</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 sm:w-1/4 p-6 max-w-sm mx-auto  rounded-xl shadow-md  items-center space-x-4">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion
+                    axe</p>
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                    <textarea id="message" name="message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                    class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral
+                    artisan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4 text-center justify-between">
+                <div
+                    class="sm:w-1/4 w-1/2 p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.7K</h2>
+                    <p class="leading-relaxed">Services</p>
+                </div>
+                <div class="p-4 sm:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.8K</h2>
+                    <p class="leading-relaxed">Clients</p>
+                </div>
+                <div class="p-4 sm:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35</h2>
+                    <p class="leading-relaxed">Solicitud</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <div class="bg-gray-100 sticky top-0 left-0 right-0">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                    target="_blank">@knyttneve</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <div class="order-first flex w-full items-center justify-center md:order-none md:w-1/2">
+        <div x-data="{
+                                            slider,
+                                            currentSlide: 0,
+                                            skip: 1,
+                                            atBeginning: false,
+                                            atEnd: false,
+                                            autoSlideInterval: null,
+                                            startAutoSlide() {
+                                                this.autoSlideInterval = setInterval(() => {
+                                                    this.next();
+                                                }, 2500);
+                                            },
+                                            stopAutoSlide() {
+                                                clearInterval(this.autoSlideInterval);
+                                            },
+                                            goToSlide(index) {
+                                                let slider = this.$refs.slider;
+                                                let offset = slider.firstElementChild.getBoundingClientRect().width;
+                                                slider.scrollTo({ left: offset * index, behavior: 'smooth' });
+                                            },
+                                            next() {
+                                                let slider = this.$refs.slider;
+                                                let current = slider.scrollLeft;
+                                                let offset = slider.firstElementChild.getBoundingClientRect().width;
+                                                let maxScroll = offset * (slider.children.length);
+                                        
+                                                current + offset >= maxScroll ? slider.scrollTo({ left: 0, behavior: 'smooth' }) : slider.scrollBy({ left: offset * this.skip, behavior: 'smooth' });
+                                            },
+                                            prev() {
+                                                let slider = this.$refs.slider;
+                                                let current = slider.scrollLeft;
+                                                let offset = slider.firstElementChild.getBoundingClientRect().width;
+                                                let maxScroll = offset * (slider.children.length - 1);
+                                        
+                                                current <= 0 ? slider.scrollTo({ left: maxScroll, behavior: 'smooth' }) : slider.scrollBy({ left: -offset * this.skip, behavior: 'smooth' });
+                                            },
+                                            updateButtonStates() {
+                                                let slideEls = this.$el.parentElement.children;
+                                                this.atBeginning = slideEls[0] === this.$el;
+                                                this.atEnd = slideEls[slideEls.length - 1] === this.$el;
+                                            },
+                                            focusableWhenVisible: {
+                                                'x-intersect:enter'() { this.$el.removeAttribute('tabindex'); },
+                                                'x-intersect:leave'() { this.$el.setAttribute('tabindex', '-1'); }
+                                            },
+                                            disableNextAndPreviousButtons: {
+                                                'x-intersect:enter.threshold.05'() { this.updateButtonStates(); },
+                                                'x-intersect:leave.threshold.05'() { this.updateButtonStates(); }
+                                            },
+                                            updateCurrentSlide() {
+                                                let slider = this.$refs.slider;
+                                                let offset = slider.firstElementChild.getBoundingClientRect().width;
+                                                this.currentSlide = Math.round(slider.scrollLeft / offset);
+                                            }
+                                        }" x-init="startAutoSlide()" @mouseover="stopAutoSlide()"
+            @mouseout="startAutoSlide()" class="group mx-auto flex w-full flex-col bg-transparent">
+
+            <!-- Carousel Body  -->
+            <div class="relative block items-center rounded-lg bg-bs-light-gray shadow-xl dark:bg-bs-very-dark-blue md:flex"
+                id="slider">
+
+                <!-- Promo -->
+                <div x-on:keydown.right="next" x-on:keydown.left="prev" tabindex="0" role="region"
+                    aria-labelledby="carousel-label" class="z-20 flex h-80 w-full">
+                    <h2 id="carousel-label" class="sr-only" hidden>Carousel</h2>
+                    <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
+
+                    <ul x-ref="slider" @scroll="updateCurrentSlide" tabindex="0" role="listbox"
+                        aria-labelledby="carousel-content-label"
+                        class="flex w-full snap-x snap-mandatory items-center overflow-hidden">
+                        <li x-bind="disableNextAndPreviousButtons" role="option"
+                            class="carousel-item flex w-full shrink-0 snap-start flex-col gap-2 p-0 md:flex-row">
+                            <img src="./img/slide/1.jpg" alt="">
+                        </li>
+                        <li x-bind="disableNextAndPreviousButtons" role="option"
+                            class="carousel-item flex w-full shrink-0 snap-start flex-col gap-2 p-0 md:flex-row">
+                            <img src="./img/slide/2.jpg" alt="">
+                        </li>
+                        <li x-bind="disableNextAndPreviousButtons" role="option"
+                            class="carousel-item flex w-full shrink-0 snap-start flex-col gap-2 p-0 md:flex-row">
+                            <img src="./img/slide/3.jpg" alt="">
+                        </li>
+                        <li x-bind="disableNextAndPreviousButtons" role="option"
+                            class="carousel-item flex w-full shrink-0 snap-start flex-col gap-2 p-0 md:flex-row">
+                            <img src="./img/slide/4.jpg" alt="">
+                        </li>
+                        <li x-bind="disableNextAndPreviousButtons" role="option"
+                            class="carousel-item flex w-full shrink-0 snap-start flex-col gap-2 p-0 md:flex-row">
+                            <img src="./img/slide/5.jpg" alt="">
+                        </li>
+                        <li x-bind="disableNextAndPreviousButtons" role="option"
+                            class="carousel-item flex w-full shrink-0 snap-start flex-col gap-2 p-0 md:flex-row">
+                            <img src="./img/slide/6.jpg" alt="">
+                        </li>
+                        <li x-bind="disableNextAndPreviousButtons" role="option"
+                            class="carousel-item flex w-full shrink-0 snap-start flex-col gap-2 p-0 md:flex-row">
+                            <img src="./img/slide/.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Button Next/Preview -->
+                <!-- Preview -->
+                <button x-on:click="prev" :aria-disabled="atBeginning" :tabindex="atEnd ? -1 : 0"
+                    class="focus:shadow-outline absolute left-1 top-1/2 z-30 h-12 w-12 rounded-full text-2xl text-bs-grayish-blue shadow-md hover:bg-white/40 hover:text-bs-bright-red focus:text-bs-bright-red focus:outline-none dark:bg-white/10 dark:text-bs-dark-blue">
+                    <span aria-hidden="true" class="block" style="transform: scale(-1);">&#x279c;</span>
+                </button>
+                <!-- Next -->
+                <button x-on:click="next" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0"
+                    class="focus:shadow-outline absolute right-1 top-1/2 z-30 h-12 w-12 rounded-full text-2xl text-bs-dark-blue shadow-md hover:bg-white/40 hover:text-bs-bright-red focus:text-bs-bright-red focus:outline-none dark:bg-white/10 dark:md:text-bs-grayish-blue">
+                    <span aria-hidden="true" class="block" style="transform: scale(1);">&#x279c;</span>
+                </button>
+
+                <!-- Indicators -->
+                <!-- Count -->
+                <div
+                    class="absolute bottom-2 right-2 z-30 rounded-full bg-bs-very-dark-blue/70 px-2 text-center text-sm text-white">
+                    <span x-text="currentSlide+1"></span>
+                    <span x-text="' / ' + $refs.slider.children.length" :key="index"></span>
+                </div>
+                <!-- Snaps -->
+                <div class="absolute bottom-2 left-0 right-0 z-30">
+                    <div class="mx-auto flex w-max justify-center gap-2 rounded-full bg-bs-very-dark-blue/70 px-2 py-1">
+                        <template x-for="(slide, index) in Array.from($refs.slider.children)" :key="index">
+                            <button @click="goToSlide(index)" :class="{
+                                                                    'bg-bs-secondary-color w-5': currentSlide ===
+                                                                        index,
+                                                                    'bg-bs-grayish-blue w-2.5': currentSlide !==
+                                                                        index
+                                                                }"
+                                class="h-2.5 rounded-full transition-all duration-300 ease-in-out hover:bg-bs-primary-color focus:outline-offset-1"></button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
